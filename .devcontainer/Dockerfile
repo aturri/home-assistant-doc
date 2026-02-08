@@ -11,6 +11,8 @@ ENV \
     LANGUAGE=en_US:en \
     LC_ALL=en_US.UTF-8
 
+RUN rm -f /etc/apt/sources.list.d/yarn.list
+
 # Install tools
 RUN \
   apt update \
